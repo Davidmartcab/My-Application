@@ -86,6 +86,8 @@ class MainActivity : AppCompatActivity() {
 
         retos.add("Junto a la persona que está frente a tí, debeís idear un reto para el resto de los jugadores")
 
+        retos.add("Todos los jugadores cambian de sitio")
+
 
 
 
