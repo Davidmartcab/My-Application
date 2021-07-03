@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Se encarga de colocar el color del fondo-->
+    <ImageView
+        android:contentDescription="@android:string/autofill"
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_bk"
+        tools:layout_editor_absoluteX="-110dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <!--Es donde se muestra el texto-->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_bk"
+        android:gravity="center_horizontal"
+        android:text="@string/texto_origen"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.297" />
+
+    <!--No se muestra, pero es necesario para que funcione-->
+    <EditText
+        android:autofillHints="@android:string/autofill"
+        android:id="@+id/prueba"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="@string/prueba"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--Boton de reto-->
+    <Button
+        android:id="@+id/btn_reto"
+        android:layout_width="175dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="92dp"
+        android:text="@string/reto"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/redlove"
+        android:textColor="@color/black"
+        />
+
+    <!--Boton de verdad-->
+    <Button
+        android:id="@+id/btn_verdad"
+        android:layout_width="175dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="92dp"
+        android:text="@string/verdad"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

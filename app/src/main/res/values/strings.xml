@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Verdad / Reto</string>
+    <string name="prueba">Prueba</string>
+    <string name="texto_origen">Pulsa el botón para empezar</string>
+    <string name="reto">Reto</string>
+    <string name="verdad">Verdad</string>
+</resources>
