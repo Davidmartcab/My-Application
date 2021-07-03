@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
         val verdades= arrayListOf<String>()
         // Definición de las verdades
         verdades.add("Esto es una prueba")
-        verdades.add("Esto es una prueba2")
-        verdades.add("Esto es una prueba3")
-        verdades.add("Esto es una prueba4")
+        verdades.add("")
+        verdades.add("")
+        verdades.add("")
 
         val retos= arrayListOf<String>()
         // Definición de los retos
