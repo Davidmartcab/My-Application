@@ -107,6 +107,11 @@ class MainActivity : AppCompatActivity() {
   retos.add("Da un abrazo al jugador frente a tí, si sois impares, a los dos")
   retos.add("Da un abrazo al jugador que elija el grupo")
 
+  retos.add("Da un beso con lengua al jugador de la derecha")
+  retos.add("Da un beso con lengua al jugador de la izquierda")
+  retos.add("Da un beso con lengua al jugador frente a tí, si sois impares, a los dos")
+  retos.add("Da un beso con lengua al jugador que elija el grupo")
+
   retos.add("Da un pico al jugador de la derecha")
   retos.add("Da un pico al jugador de la izquierda")
   retos.add("Da un pico al jugador frente a tí, si sois impares, a los dos")
@@ -212,10 +217,16 @@ class MainActivity : AppCompatActivity() {
   }
   val help = findViewById<Button>(R.id.btn_help)
   help.setOnClickListener {
-    val n_retos = retos.count()
-    val n_verdades = verdades.count()
-    Toast.makeText(applicationContext, "Retos: $n_retos, Verdades: $n_verdades. \n Si no cumples los retos deberás quitarte una prenda",Toast.LENGTH_LONG).show()
+   val n_retos = retos.count()
+   val n_verdades = verdades.count()
+   Toast.makeText(applicationContext, "Retos: $n_retos, Verdades: $n_verdades. \n Si no cumples los retos deberás quitarte una prenda",Toast.LENGTH_LONG).show()
 
+  }
+
+  val btn_alcahueta = findViewById<Button>(R.id.btn_invisible)
+  btn_alcahueta.setOnClickListener{
+   val reto_alcahueta = "Da un beso con lengua al jugador que elija el grupo"
+   addNuevo(reto_alcahueta)
   }
 
 
