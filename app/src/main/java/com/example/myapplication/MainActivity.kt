@@ -203,28 +203,28 @@ class MainActivity : AppCompatActivity() {
 
   val nuevo_reto = findViewById<Button>(R.id.btn_reto)
   nuevo_reto.setOnClickListener {
-    val reto = retos[numRand(retos.count())]
-    addNuevo(reto)
+   val reto = retos[numRand(retos.count())]
+   addNuevo(reto)
   }
 
   val nuevo_verdad = findViewById<Button>(R.id.btn_verdad)
   nuevo_verdad.setOnClickListener {
-    val verdad = verdades[numRand(verdades.count())]
-    addNuevo(verdad)
+   val verdad = verdades[numRand(verdades.count())]
+   addNuevo(verdad)
   }
 
   val help = findViewById<Button>(R.id.btn_help)
   help.setOnClickListener {
-    val n_retos = retos.count()
-    val n_verdades = verdades.count()
-    Toast.makeText(applicationContext, "Retos: $n_retos, Verdades: $n_verdades. \n Si no cumples los retos deberás quitarte una prenda",Toast.LENGTH_LONG).show()
+   val n_retos = retos.count()
+   val n_verdades = verdades.count()
+   Toast.makeText(applicationContext, "Retos: $n_retos, Verdades: $n_verdades. \n Si no cumples los retos deberás quitarte una prenda",Toast.LENGTH_LONG).show()
   }
 
 
   val btn_alcahueta = findViewById<Button>(R.id.btn_invisible)
   btn_alcahueta.setOnClickListener{
-    val reto_alcahueta = "Da un beso con lengua al jugador que elija el grupo"
-    addNuevo(reto_alcahueta)
+   val reto_alcahueta = "Da un beso con lengua al jugador que elija el grupo"
+   addNuevo(reto_alcahueta)
   }
 
 
